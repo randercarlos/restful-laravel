@@ -36,7 +36,7 @@ Para popular o banco de dados
 
 ## Usando o sistema
 
-- Autenticação na api -> POST http://host_do_projeto/api/v1/auth com 2 form_params:
+- **Autenticação na api** -> POST http://host_do_projeto/api/v1/auth com 2 form_params:
 
 'email' => email_usuario
 'password' => senha_usuario
@@ -45,21 +45,21 @@ Retorna Json com o parâmetro token que é JWT a ser usado em todas as requisiç
 webservice restful
 
 
-- Listar todos os produto -> GET http://host_do_projeto/api/v1/products. O token do JWT pode ser enviado de 2 formas:
+- **Listar todos os produto** -> GET http://host_do_projeto/api/v1/products. O token do JWT pode ser enviado de 2 formas:
 
 http://host_do_projeto/api/v1/products?token=jwt_gerado_no_login
 OU
 http://host_do_projeto/api/v1/products passando o header: "Authorization: Bearer jwt_gerado_no_login"
 
 
-- Exibir produto -> GET http://host_do_projeto/api/v1/products/id_product. O token do JWT pode ser enviado de 2 formas:
+- **Exibir produto** -> GET http://host_do_projeto/api/v1/products/id_product. O token do JWT pode ser enviado de 2 formas:
 
 http://host_do_projeto/api/v1/products/id_product?token=jwt_gerado_no_login
 OU
 http://host_do_projeto/api/v1/products/id_product passando o header: "Authorization: Bearer jwt_gerado_no_login"
 
 
-- Cadastrar produto -> POST http://host_do_projeto/api/v1/products com 2 form_params:
+- **Cadastrar produto** -> POST http://host_do_projeto/api/v1/products com 2 form_params:
 
 'name' => nome_do_produto
 'description' => descricao_do_produto
@@ -73,7 +73,7 @@ http://host_do_projeto/api/v1/products passando o header: "Authorization: Bearer
 Retorna o Json contendo os dados do produto cadastrado
 
 
-- Alterar produto -> PUT http://host_do_projeto/api/v1/products/id_product com 2 form_params:
+- **Alterar produto** -> PUT http://host_do_projeto/api/v1/products/id_product com 2 form_params:
 
 'name' => nome_do_produto
 'description' => descricao_do_produto
@@ -87,7 +87,7 @@ http://host_do_projeto/api/v1/products passando o header: "Authorization: Bearer
 Retorna o Json contendo os dados do produto alterado
 
 
-- Excluir produto -> DELETE http://host_do_projeto/api/v1/products/id_product
+- **Excluir produto** -> DELETE http://host_do_projeto/api/v1/products/id_product
 
 O token do JWT pode ser enviado de 2 formas:
 
@@ -107,7 +107,7 @@ Retorna true se ação for excluído ou false caso contrário.
 
 ## Autor
 
-* **Rancer Carlos** - *Desenvolvedor PHP* (https://github.com/randercarlos)
+* **Rander Carlos** - *Desenvolvedor PHP* (https://github.com/randercarlos)
 
 ## Licença
 
